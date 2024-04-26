@@ -1,10 +1,21 @@
 import './App.css';
+import Headers from './Headers.js';
+import Nav from './Nav.js';
+import Main from './Main.js';
+import Footer from './Footer.js';
 
 function App() {
   return (
-    <div>
-      Homepage
-    </div>
+    <html>
+      <head>
+      </head>
+      <body>
+        <Headers/>
+        <Nav/>
+        <Main/>
+        <Footer/>
+      </body>
+    </html>
   );
 }
 
