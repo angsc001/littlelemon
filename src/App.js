@@ -1,22 +1,25 @@
 import './App.css';
-import Headers from './Headers.js';
-import Nav from './Nav.js';
-import Main from './Main.js';
-import Footer from './Footer.js';
+import Headers from './component/Headers.js';
+import Footer from './component/Footer.js';
+import Main from './component/Main.js';
+import Specials from './component/Specials.js'
+import Testimonials from './component/Testimonials.js'
+import AboutUs from './component/AboutUs.js'
+import { ChakraProvider } from '@chakra-ui/react';
 
 function App() {
   return (
-    <html>
-      <head>
-      </head>
-      <body>
-        <Headers>
-        </Headers>
-        <Nav/>
+    <ChakraProvider>
+    <main>
+        <Headers/>
         <Main/>
+        <Specials/>
+        <Testimonials/>
+        <AboutUs/>
         <Footer/>
-      </body>
-    </html>
+    </main>
+    </ChakraProvider>
+
   );
 }
 
