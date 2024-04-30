@@ -1,33 +1,38 @@
-import { HStack,VStack, Container, Box } from "@chakra-ui/react";
+import { HStack,VStack, Container, Box, Center } from "@chakra-ui/react";
+import image from "../image/restauranfood.jpg"
 
 function Main (){
     return(
-        <Box 
-        background="495E57"
-        align="center"
-        maxWidth="1280px">
+        <Center 
+        backgroundColor="#495E57"
+        height="360px"
+       >
         <HStack
-         alignitems = "center">
-        <VStack
-        height="1440px">
-            <Container maxW='md' bg='blue.600' color='#262626'>
-                "md" Container
-            </Container>
-            <Container maxW='550px' bg='purple.600' color='#262626'>
-                "550px" Container
-            </Container>
-            <Container maxW='container.sm' bg='green.400' color='#262626'>
-                "container.sm" Container
-            </Container>
+        spacing="243px">
+        <VStack>
+            <h1>
+                Little Lemon
+            </h1>
+            <h1>
+                Chicago
+            </h1>
+            <h2>
+            We are a family owned
+            Mediterranean restaurant,
+            focused on traditional
+            recipes served with a modern
+            twist.
+            </h2>
+            <button backgroundColor="yellow">
+                Reserve a Table
+            </button>
         </VStack>
         <img
-            width={360}
-            height={1440}
-            src="image\restauranfood.jpg"/>
-        </HStack>
-        </Box>
-
-
+            width="393px"
+            height="440px"
+            src= {image}/>
+         </HStack>
+         </Center>
     );
 }
 export default Main;

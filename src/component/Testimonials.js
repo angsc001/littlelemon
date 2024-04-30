@@ -1,8 +1,16 @@
+import { HStack, VStack } from "@chakra-ui/react";
 
 
 const Testimonials = () => {
     return (
-        <html></html>
+        <VStack>
+            <h1>
+                Testimonials
+            </h1>
+            <HStack>
+                
+            </HStack>
+        </VStack>
     )
 }
 
