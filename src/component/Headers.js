@@ -31,13 +31,13 @@ Headers = () => {
                             id='logo' 
                             src={logo[0].url}>
                         </img>
-                        <a>Home</a>
-                        <a>About</a>
-                        <a>Menu</a>
-                        <a>Reservations</a>
-                        <a>Order Online</a>
-                        <a>Login</a>
-                    </HStack>
+                        <a href="/home">Home</a>
+                        <a href="/about">About</a>
+                        <a href="/menu">Menu</a>
+                        <a href="/reservation">Reservations</a>
+                        <a href="/order">Order Online</a>
+                        <a href="/login">Login</a>
+                </HStack>
             </Box>
         </Box>
     );

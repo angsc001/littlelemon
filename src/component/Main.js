@@ -1,4 +1,4 @@
-import { HStack,VStack, Container, Box, Center } from "@chakra-ui/react";
+import { HStack, VStack, Center } from "@chakra-ui/react";
 import image from "../image/restauranfood.jpg"
 
 function Main (){
@@ -23,7 +23,7 @@ function Main (){
             recipes served with a modern
             twist.
             </h2>
-            <button backgroundColor="yellow">
+            <button>
                 Reserve a Table
             </button>
         </VStack>

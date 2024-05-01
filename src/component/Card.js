@@ -21,7 +21,7 @@ const Card = () => {
             </h3>
         </VStack>
         <button>
-            Order a delivery ->
+            Order a delivery
         </button>
         </Box>
     )
