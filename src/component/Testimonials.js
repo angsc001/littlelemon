@@ -1,4 +1,4 @@
-import { Center, HStack, VStack } from "@chakra-ui/react";
+import {Box, Center, HStack, VStack } from "@chakra-ui/react";
 import Rating from "./Rating";
 
 
@@ -9,10 +9,19 @@ const Testimonials = () => {
         backgroundColor="#495E57">
         <VStack
         spacing="62px">
-            <h1>
+            <Box
+            position="absolute"
+            top="1363px"
+            left="664px">
+            <h1 className="whitetitle">
                 Testimonials
             </h1>
-            <HStack>
+            </Box>
+            <HStack
+            position="absolute"
+            top="1473px"
+            left="190px"
+            spacing="20px">
                 <Rating></Rating>
                 <Rating></Rating>
                 <Rating></Rating>

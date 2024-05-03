@@ -1,4 +1,4 @@
-import { Box, Collapse, HStack, SlideFade, Tag } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import logo from "../image/LittleLemon.png"
 
 Headers = () => {
@@ -8,26 +8,25 @@ Headers = () => {
          transitionDuration=".3s"
          transitionTimingFunction="ease-in-out"
          background="FFFFFF"
-         className="Header">
+         className="gridcontainer"
+         minHeight="150px"
+         maxWidth="auto"
+         >
                 <Box
-                    gridColumn="5"
-                    maxHeight="auto"
-                    margin="0"
-                    paddingTop="10px"
-                    paddingBottom="10px">
-                <img 
-                    width='230px' 
+                    position="absolute"
+                    top="45px"
+                    left="269px">
+                <img
+                    width='230px'
                     height='70px'
                     src={logo}
                     />
                 </Box>
                 <Box
-                    // px={35}
-                    // py={4}
-                    // justifyContent="space-between"
-                    gridColumn="8"
-                    paddingLeft="60px"
-                    paddingTop="15px"
+                    position="absolute"
+                    top="61px"
+                    left="525px"
+                    minWidth="740px"
                 >
                         <a href="/home">Home</a>
                         <a href="/about">About</a>

@@ -1,39 +1,36 @@
-import { Center, HStack, VStack, Box } from "@chakra-ui/react";
+import { HStack, Box } from "@chakra-ui/react";
 import SCard from "./Card.js";
 
 const Specials = () => {
     return (
         <Box
-        className="threeColumn"
-        height="740px">
+        className="gridcontainer"
+        height="742px">
         <Box
-        gridRow="1"
-        gridColumn="5">
-        <h1 className="blacktitle" style={{position:'absolute', top:'530px'}}>This weeks special</h1>
+        position="absolute"
+        top="656px"
+        left="269px">
+        <h1 className="blacktitle">This weeks special</h1>
         </Box>
 
-        <Box 
-        gridRow="1"
-        gridColumn="7"
-        >
-        <button className="onlinemenu">Online Menu</button>
+        <Box
+        position="absolute"
+        top="650px"
+        left="1033px">
+        <button
+        className="onlinemenu">Online Menu</button>
         </Box>
 
-            <Box 
-            gridColumn="5"
-            gridRow="2">
-            <SCard></SCard>
-            </Box>
-            <Box 
-            gridColumn="6"
-            gridRow="2">
-            <SCard></SCard>
-            </Box>
-            <Box 
-            gridColumn="7"
-            gridRow="2">
-            <SCard></SCard>
-            </Box>
+
+        <HStack
+        position="absolute"
+        top="745px"
+        left="271px"
+        spacing="26px">
+        <SCard></SCard>
+        <SCard></SCard>
+        <SCard></SCard>
+        </HStack>
         </Box>
     )
 }

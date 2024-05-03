@@ -1,14 +1,32 @@
-.App {
-  text-align: center;
+:root{
+  --primary-color: #495E57;
+  --secondary-color:#EDEFEE;
+  --button: #F4CE14;
+  --primaryfont: #F4CE14;
+  --secondaryfont: #495E57;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 350px 350px 350px 350px 1fr 1fr 1fr 1fr;
+  grid-template-rows:repeat(3,auto);
+  min-width: 1440px;
 }
 
 h1 {
   align-self: start;
+  font-size: 40px;
+  font-family: 'Marlazi Text';
+  font-weight: bolder;
+  min-height: 70px;
 }
 
 h2 {
@@ -20,58 +38,31 @@ h2 {
   font-size: 18px;
 }
 
+h3{
+  font-family: 'karla';
+  font-weight: normal;
+  font-size: 16px;
+}
+
 a{
   font-family: 'Marlazi Text';
-  font-weight: normal;
+  font-weight: bold;
   font-size: 20px;
   margin: 20px;
-}
-
-.Header {
-  display: grid;
-  grid-template-columns:  1fr 1fr 1fr 1fr 180px 1fr 1fr 740px 1fr 1fr 1fr 1fr;
-  grid-auto-rows: minmax(0px, auto);
-  min-width: 960px;
-}
-
-.TwoColumn {
-  display: grid;
-  grid-template-columns:  1fr 1fr 1fr 1fr 460px 1fr 1fr 460px 1fr 1fr 1fr 1fr;
-  grid-auto-rows: minmax(0px, auto);
-  min-width: 960px;
-}
-
-.threeColumn {
-  display: grid;
-  grid-template-columns:  1fr 1fr 1fr 1fr 360px 360px 360px 1fr 1fr 1fr 1fr;
-  grid-template-rows: 185px 468px 86px;
-  min-width: 960px;
 }
 
 .littlelemon {
   font-size: 64px;
   font-family: 'Marlazi Text';
   font-weight: bolder;
-  color: #F4CE14;
+  color: var(--primaryfont);
   max-height: 70px;
   margin-top: 0;
 }
 
-.whitetitle {
-  font-size: 40px;
-  font-family: 'Marlazi Text';
-  font-weight: bolder;
-  color: white;
-  min-height: 70px;
-}
+.whitetitle {color: var(--secondary-color);}
 
-.blacktitle {
-  font-size: 40px;
-  font-family: 'Marlazi Text';
-  font-weight: bolder;
-  color: black;
-  min-height: 70px;
-}
+.blacktitle {color:var(--secondaryfont)}
 
 .mainphoto {
   width: 400px;
@@ -84,7 +75,7 @@ a{
 
 .reserve {
   margin-top: 40px;
-  background-color: #F4CE14;
+  background-color: var(--button);
   width: 211px;
   height: 60px;
   align-self: start;
@@ -94,13 +85,39 @@ a{
 }
 
 .onlinemenu {
-  margin-top: 100px;
-  background-color: #F4CE14;
-  width: 211px;
-  height: 60px;
+  background-color: var(--button);
+  width: 175px;
+  height: 59px;
   align-self: start;
   border-radius: 8px;
   font-family: 'karla';
   font-weight: 600;
 }
 
+.cardphoto {
+  border-radius: 20px;
+}
+
+.invisiblebutton {
+  font-weight: bold;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.price{
+  font-size: 25;
+  color: #EE9972;
+  font-weight: bolder;
+  font-family: 'Karla';
+}
+
+header {
+  font-family: 'Kameron';
+  font-weight: bold;
+  font-size: 30px;
+}
+main {
+  font-family: 'Karla';
+  font-weight: bold;
+  font-size: 25px;
+}

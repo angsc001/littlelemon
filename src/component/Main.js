@@ -1,15 +1,17 @@
-import { HStack, VStack, Box } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import image from "../image/restauranfood.jpg"
 
 function Main (){
     return(
         <Box 
         backgroundColor="#495E57"
-        height="360px"
-        className="TwoColumn"
+        height="410px"
+        className="gridcontainer"
        >
             <Box
-            gridColumn="5"
+            position="absolute"
+            top="171px"
+            left="269px"
             >
                 <h1 className="littlelemon">
                     Little Lemon
@@ -17,18 +19,23 @@ function Main (){
                 <h1 className="whitetitle">
                     Chicago
                 </h1>
-                <h2>We are a family owned</h2>
-                <h2>Mediterranean restaurant,</h2>
-                <h2>focused on traditional</h2>
-                <h2>recipes served with a modern</h2>
-                <h2>twist.</h2>
+                <Box width="317px"
+                height="104px">
+                <h2>We are a family owned
+                    Mediterranean restaurant,
+                    focused on traditional
+                    recipes served with a modern
+                    twist.</h2>
+                </Box>
                 <button 
                 className="reserve">
                     Reserve a Table
                 </button>
             </Box>
             <Box
-            gridColumn="8">
+            position="absolute"
+            top="181px"
+            left="829px">
             <img
                 className="mainphoto"
                 src= {image}
