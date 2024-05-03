@@ -29,7 +29,7 @@ const Card = () => {
         <Box margin="10px">
         <button className="invisiblebutton"
         >
-            Order a delivery >
+            Order a delivery
         </button>
         </Box>
         </Box>
