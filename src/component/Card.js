@@ -1,8 +1,6 @@
 import { Box, HStack, VStack } from "@chakra-ui/react"
-import food1 from "../image/bruchetta.svg"
-import food2 from "../image/greek salad.jpg"
 
-const Card = () => {
+const Card = ({img, title, price, description}) => {
     return (
         <Box
         backgroundColor="#EDEFEE"
@@ -11,19 +9,17 @@ const Card = () => {
         <VStack
         spacing="20px"
         >
-            <img src={food2} className="cardphoto"></img>
+            <img src={img} className="cardphoto" alt="Local Image"></img>
             <Box margin="10px">
             <HStack
             padding="5px"
             justifyContent="space-between"
             width="100%"
             >
-                <h2 className="blacktitle">Greek Salad</h2>
-                <h3 className="price">$10.99</h3>
+                <h2 className="blacktitle">{title}</h2>
+                <h3 className="price">{price}</h3>
             </HStack>
-            <h3>
-            The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. 
-            </h3>
+            <h3>{description}</h3>
             </Box>
         </VStack>
         <Box margin="10px">

@@ -1,8 +1,21 @@
 import { HStack, Box } from "@chakra-ui/react";
 import SCard from "./Card.js";
+import bruchetta from "../image/bruchetta.svg"
+// import greeksalad from "../image/greek salad.jpg"
+import lemondessert from "../image/lemon dessert.jpg"
+import jsondata from "../component/propcard.json"
+import { useEffect, useState } from "react";
+import ImageComponent from "./ImageComponent.js";
 
 const Specials = () => {
-    return (
+    const [data,setdata] = useState([]);
+
+    useEffect(() => {
+        setdata(jsondata);
+    }, []);
+
+
+return (
         <Box
         className="gridcontainer"
         height="742px">
@@ -27,9 +40,14 @@ const Specials = () => {
         top="745px"
         left="271px"
         spacing="26px">
-        <SCard></SCard>
-        <SCard></SCard>
-        <SCard></SCard>
+            {data.map(item => (
+                <SCard 
+                key={item.key}
+                img={item.imgurl}
+                title={item.title} 
+                price={item.price} 
+                description={item.description}></SCard>
+            ))}
         </HStack>
         </Box>
     )
