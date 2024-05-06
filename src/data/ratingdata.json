@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "key": "person1",
+        "name": "Ben",
+        "rating": 5,
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRlSA6OeLhxDwO5_TymyV7YAUdvrr3xSDTgxEwoCIpFA&s",
+        "comment": "Excellent food with wines"
+    },
+    {
+        "id": 2,
+        "key": "person2",
+        "name": "Rebecca",
+        "rating": 5,
+        "picture": "https://thumbs.dreamstime.com/b/head-shot-serious-business-leader-posing-modern-office-head-shot-serious-business-leader-posing-modern-office-profile-209902618.jpg",
+        "comment": "The Desert is a must try"
+    },
+    {
+        "id": 3,
+        "key": "person3",
+        "name": "Peter",
+        "rating": 4,
+        "picture": "https://www.shutterstock.com/image-photo/head-shot-portrait-close-smiling-600nw-1714666150.jpg",
+        "comment": "Healthy choice for a friday night take away"
+    },
+    {
+        "id": 4,
+        "key": "person4",
+        "name": "Emily",
+        "rating": 5,
+        "picture": "https://t3.ftcdn.net/jpg/04/34/17/94/360_F_434179446_kORDzwTnaGyaYJDqbTqyOSqcrIyhXXn7.jpg",
+        "comment": "Beautiful Restaurant with amazing design"
+    }
+]
+

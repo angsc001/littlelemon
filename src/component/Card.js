@@ -17,7 +17,7 @@ const Card = ({img, title, price, description}) => {
             width="100%"
             >
                 <h2 className="blacktitle">{title}</h2>
-                <h3 className="price">{price}</h3>
+                <h3 className="price">${price}</h3>
             </HStack>
             <h3>{description}</h3>
             </Box>

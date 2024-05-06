@@ -1,7 +1,11 @@
 import { Box, HStack, VStack } from "@chakra-ui/react"
-import person from "../image/person1.webp"
-
-const Rating = () => {
+const Rating = ({name,rating,picture,comment}) => {
+    function Countingstars({count}) {
+        const stars = Array.from({length: count},(_,index) => (
+            <span key={index}>★</span>
+        ));
+        return <h2 className="blacktitle">{stars}</h2>
+    }
     return (
         <Box
         width="250px"
@@ -9,13 +13,15 @@ const Rating = () => {
         backgroundColor="#EDEFEE"
         padding="20px">
             <VStack spacing="10px">
-                <h2 className="blacktitle">★★★★★</h2>
+                <Countingstars count={rating}/>
                 <HStack
                 alignSelf="start">
-                    <img src={person} width="85px" height="85px"></img>
-                    <h2 className="blacktitle">Ben</h2>
+                    <img 
+                     src={picture}
+                     width="85px" height="85px"></img>
+                    <h2 className="blacktitle">{name}</h2>
                 </HStack>
-                <h2 className="blacktitle">Excellent food with wines</h2>
+                <h2 className="blacktitle">{comment}</h2>
             </VStack>
         </Box>
     )

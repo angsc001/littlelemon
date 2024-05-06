@@ -1,4 +1,4 @@
-import {Center, HStack, VStack } from "@chakra-ui/react";
+import {Box, Center, HStack, VStack } from "@chakra-ui/react";
 import littlelemon from "../image/little lemon logo-Photoroom.png-Photoroom.png"
 import facebooklogo from "../image/facebook.png"
 import instagramlogo from "../image/instagram.png"
@@ -12,9 +12,17 @@ function Footer (){
         backgroundColor="#EDEFEE">
             <HStack
             spacing="100px">
+                <Box
+                position="absolute"
+                top="2510px"
+                left="228px">
                 <img src={littlelemon}></img>
+                </Box>
                 <VStack
-                spacing="0px">
+                spacing="0px"
+                position="absolute"
+                top="2527px"
+                left="596px">
                     <header>LITTLE LEMON </header>
                     <main>Home</main>
                     <main>About</main>
@@ -22,8 +30,11 @@ function Footer (){
                     <main>Order Online</main>
                     <main>Login</main>
                 </VStack>
-                <VStack>
-                    <header>Contact</header>
+                <VStack
+                position="absolute"
+                top="2527px"
+                left="983px">
+                    <header>CONTACT</header>
                     <VStack>
                         <main>(+60)12-2345678</main>
                         <main>Jln Klang Lama</main>

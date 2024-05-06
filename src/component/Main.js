@@ -1,7 +1,12 @@
 import { Box } from "@chakra-ui/react";
 import image from "../image/restauranfood.jpg"
+import { useNavigate } from "react-router-dom";
 
 function Main (){
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/form');
+    }
     return(
         <Box 
         backgroundColor="#495E57"
@@ -28,7 +33,8 @@ function Main (){
                     twist.</h2>
                 </Box>
                 <button 
-                className="reserve">
+                className="reserve"
+                onClick={handleClick}>
                     Reserve a Table
                 </button>
             </Box>

@@ -1,8 +1,16 @@
 import {Box, Center, HStack, VStack } from "@chakra-ui/react";
 import Rating from "./Rating";
-
+import jsondata from "../data/ratingdata.json"
+import { useEffect, useState } from "react";
 
 const Testimonials = () => {
+
+    const [data,setdata] = useState([]);
+
+    useEffect(() => {
+        setdata(jsondata);
+    }, []);
+
     return (
         <Center
         height="602px"
@@ -22,10 +30,15 @@ const Testimonials = () => {
             top="1473px"
             left="190px"
             spacing="20px">
-                <Rating></Rating>
-                <Rating></Rating>
-                <Rating></Rating>
-                <Rating></Rating>
+                {data.map(item => (
+                <Rating 
+                key={item.key}
+                name={item.name}
+                rating={item.rating} 
+                picture={item.picture} 
+                comment={item.comment}
+                ></Rating>
+            ))}
             </HStack>
         </VStack>
         </Center>

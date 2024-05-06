@@ -114,6 +114,12 @@ a{
   font-family: 'Karla';
 }
 
+.form {
+  display: grid; 
+  max-width: 200px; 
+  gap: 20px
+}
+
 header {
   font-family: 'Kameron';
   font-weight: bold;

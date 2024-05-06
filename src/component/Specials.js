@@ -1,12 +1,7 @@
 import { HStack, Box } from "@chakra-ui/react";
 import SCard from "./Card.js";
-import bruchetta from "../image/bruchetta.svg"
-// import greeksalad from "../image/greek salad.jpg"
-import lemondessert from "../image/lemon dessert.jpg"
-import jsondata from "../component/propcard.json"
+import jsondata from "../data/carddata.json"
 import { useEffect, useState } from "react";
-import ImageComponent from "./ImageComponent.js";
-
 const Specials = () => {
     const [data,setdata] = useState([]);
 
