@@ -32,7 +32,7 @@ function Main (){
                     recipes served with a modern
                     twist.</h2>
                 </Box>
-                <button 
+                <button
                 className="reserve"
                 onClick={handleClick}>
                     Reserve a Table

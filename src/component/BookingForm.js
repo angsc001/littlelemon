@@ -2,9 +2,7 @@ import '../App.css';
 import { Box, Center, HStack } from "@chakra-ui/react"
 import logo from "../image/LittleLemon.png"
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-
-const BookingForm = (availableTimes) => {
+const BookingForm = ({availableTimes}) => {
     const navigate = useNavigate();
     const handleClick = () => {
         navigate('/');
@@ -25,12 +23,6 @@ const BookingForm = (availableTimes) => {
                     {time}
                 </option>
             ))}
-            {/* <option>17:00</option>
-            <option>18:00</option>
-            <option>19:00</option>
-            <option>20:00</option>
-            <option>21:00</option>
-            <option>22:00</option> */}
         </select>
         <h2 className='blacktitle' for="guests">Number of guests</h2>
         <input className='blacktitle' type="number" placeholder="1" min="1" max="10" id="guests"/>
