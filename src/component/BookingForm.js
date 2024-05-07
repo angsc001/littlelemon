@@ -4,15 +4,12 @@ import logo from "../image/LittleLemon.png"
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 
-const BookingForm = () => {
+const BookingForm = (availableTimes) => {
     const navigate = useNavigate();
     const handleClick = () => {
         navigate('/');
     }
-    const [availableTimes, setAvailableTimes] = useState([
-        '10:00 AM', '11:00 AM', '12:00 PM', '1:00 PM', '2:00 PM', '3:00 PM'
-        // Add more available times as needed
-      ]);
+
     return (
         <Center>
         <form className="form" >
