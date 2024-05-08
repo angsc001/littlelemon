@@ -1,3 +1,4 @@
+import { ThemeProvider } from '@chakra-ui/react';
 import BookingForm from './component/BookingForm.js';
 import { useEffect, useState } from 'react';
 
@@ -7,7 +8,7 @@ const Booking  = () => {
         // Add more available times as needed
       ]);
     return (
-        <BookingForm availableTimes={availableTimes}></BookingForm>
+            <BookingForm availableTimes={availableTimes}></BookingForm>
     );
 }
 

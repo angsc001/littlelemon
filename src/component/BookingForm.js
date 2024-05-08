@@ -1,21 +1,24 @@
 import '../App.css';
-import { Box, Center, HStack } from "@chakra-ui/react"
+import { Center, HStack, ThemeProvider } from "@chakra-ui/react"
 import logo from "../image/LittleLemon.png"
 import { useNavigate } from 'react-router-dom';
+import { DateProvider, useDate } from './DateContext';
 const BookingForm = ({availableTimes}) => {
     const navigate = useNavigate();
     const handleClick = () => {
         navigate('/');
     }
-
+    const [date, setDate] = useDate();
     return (
+        <DateProvider>
         <Center>
         <form className="form" >
         <HStack>
         <img src={logo}></img>
         </HStack>
         <h2 className='blacktitle' for="res-date">Choose date</h2>
-        <input type="date" id="res-date" className='blacktitle'/>
+        <input type="date" id="res-date" className='blacktitle'
+        checked={date === "light"} onChange={setDate}/>
         <h2 className='blacktitle' for="res-time">Choose time</h2>
         <select id="res-time " className='blacktitle'>
             {availableTimes.map ((time,index) => (
@@ -35,6 +38,7 @@ const BookingForm = ({availableTimes}) => {
         <button onClick={handleClick}>Back</button>
         </form>
         </Center>
+        </DateProvider>
     );
 }
 
