@@ -18,10 +18,12 @@ const BookingForm = () => {
         </HStack>
         <h2 className='blacktitle' hmtlfor="res-date">Choose date</h2>
         <input type="date" id="res-date" className='blacktitle'
+        data-testid="date-input"
         onChange={handledate}
         />
         <h2 className='blacktitle' hmtlfor="res-time">Choose time</h2>
-        <select id="res-time " className='blacktitle'>
+        <select id="res-time " className='blacktitle'
+        data-testid="time-input">
             {availableTimes.map ((time,index) => (
                 <option key={index} value={time}>
                     {time}
