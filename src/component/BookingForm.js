@@ -1,9 +1,8 @@
 import '../App.css';
-import { Center, HStack, ThemeProvider } from "@chakra-ui/react"
+import { Center, HStack } from "@chakra-ui/react"
 import logo from "../image/LittleLemon.png"
 import { useNavigate } from 'react-router-dom';
-import { DateProvider, useDate } from './DateContext';
-import { useEffect, useState } from 'react';
+import { useDate } from './DateContext';
 const BookingForm = () => {
     const navigate = useNavigate();
     const handleClick = () => {
