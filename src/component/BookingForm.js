@@ -3,12 +3,13 @@ import { Center, HStack } from "@chakra-ui/react"
 import logo from "../image/LittleLemon.png"
 import { useNavigate } from 'react-router-dom';
 import { useDate } from './DateContext';
+import {FetchAPI} from '../component/FetchTimesAPI';
 const BookingForm = () => {
     const navigate = useNavigate();
     const handleClick = () => {
         navigate('/');
     }
-    const {availableTimes, handledate} = useDate();
+    const {availableTimes, updateTimes} = useDate();
     return (
         <Center>
         <form className="form" >
@@ -18,7 +19,7 @@ const BookingForm = () => {
         <h2 className='blacktitle' hmtlfor="res-date">Choose date</h2>
         <input type="date" id="res-date" className='blacktitle'
         data-testid="date-input"
-        onChange={handledate}
+        onChange={updateTimes }
         />
         <h2 className='blacktitle' hmtlfor="res-time">Choose time</h2>
         <select id="res-time " className='blacktitle'
@@ -37,7 +38,9 @@ const BookingForm = () => {
             <option>Anniversary</option>
         </select>
         <input className='blacktitle' type="submit" value="Make Your reservation"/>
-        <button onClick={handleClick}>Back</button>
+        <button 
+        onClick={handleClick}
+        >Back</button>
         </form>
         </Center>
     );
