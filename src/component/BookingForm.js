@@ -3,11 +3,16 @@ import { Center, HStack } from "@chakra-ui/react"
 import logo from "../image/LittleLemon.png"
 import { useNavigate } from 'react-router-dom';
 import { useDate } from './DateContext';
+import { useSubmit } from '../hooks/useSubmit';
 import {FetchAPI} from '../component/FetchTimesAPI';
 const BookingForm = () => {
     const navigate = useNavigate();
     const handleClick = () => {
         navigate('/');
+    }
+    const {isLoading, response, submit} = useSubmit();
+    const naviConfirmedBooking = () => {
+        navigate('/confirmed');
     }
     const {availableTimes, updateTimes} = useDate();
     return (
@@ -37,7 +42,8 @@ const BookingForm = () => {
             <option>Birthday</option>
             <option>Anniversary</option>
         </select>
-        <input className='blacktitle' type="submit" value="Make Your reservation"/>
+        <input className='blacktitle' type="submit" value="Make Your reservation"
+        onClick={naviConfirmedBooking}/>
         <button 
         onClick={handleClick}
         >Back</button>
