@@ -1,8 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import App from './App';
-import Booking from './Booking.js';
 import Home from './Home';
-import BookingForm from './component/BookingForm';
 
 describe('navigates to the correct route', () => {
   it('renders without crashing', () => {

@@ -3,10 +3,6 @@ import { DateProvider } from './component/DateContext.js';
 import FetchTimesAPI from './component/FetchTimesAPI.js';
 
 const Booking  = () => {
-  function submitForm () {
-    
-  }
-
     return (
       <DateProvider>
             <BookingForm></BookingForm>
