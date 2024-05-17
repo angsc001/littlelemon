@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDate } from './DateContext';
 import useSubmit from '../hooks/useSubmit';
 import { useState } from 'react';
+import {useFormik} from 'formik';
 const BookingForm = () => {
     const navigate = useNavigate();
     const [formData, setFormData] = useState({
@@ -31,6 +32,9 @@ const BookingForm = () => {
     const handleClick = () => {
         navigate('/');
     }
+    const formik = useFormik({
+
+    })
     const {availableTimes, updateTimes} = useDate();
     return (
         <Center>
