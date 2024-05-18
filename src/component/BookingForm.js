@@ -81,8 +81,8 @@ const BookingForm = () => {
                 name='date'
                 className='blacktitle'
                 data-testid="date-input"
-                onChange={formik.handleChange}
-                //onChange={handlecustomchange}
+                onInput={formik.handleChange}
+                onChange={updateTimes}
                 value={formik.values.date}
                 />
                 <FormErrorMessage>{formik.errors.date}</FormErrorMessage>
