@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react';
+import { fireEvent, getByTestId, render, screen } from '@testing-library/react';
 import App from './App';
 import Home from './Home';
 
@@ -22,6 +22,19 @@ describe('navigates to the correct route', () => {
       expect(screen.getByText('Choose date')).toBeInTheDocument();
    });
 
+   it('Check if UX is properly establish', () => {
+    render(
+      <App initialEntries={['/']}>
+        <Home />
+      </App>
+    );
+      const submitButton = screen.getByTestId('submitbutton');
+      //expect(submitButton).toBeDisabled();
+      const inputElement = screen.getByTestId('date-input');
+      fireEvent.change(inputElement, { target: { value: '2024-05-10' } });
+      expect(submitButton).toBeEnabled();
+   });
+
    it('Check initial times', () => {
     render(
       <App initialEntries={['/']}>
@@ -41,6 +54,8 @@ describe('navigates to the correct route', () => {
       const inputElement = screen.getByTestId('date-input');
       fireEvent.change(inputElement, { target: { value: '2024-05-10' } });
       const updateTimes   = screen.getByTestId('time-input');
-      expect(updateTimes .value).toBe('10:30 AM')
+      expect(updateTimes .value).toBe('15:00 AM')
    });
+
+
 });

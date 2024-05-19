@@ -110,7 +110,10 @@ const BookingForm = () => {
             </Select>
         <Button className='blacktitle'
         type="submit"
-        height="20px">
+        height="20px"
+        isDisabled={formik.errors.date}
+        onClick={naviConfirmedBooking}
+        data-testid='submitbutton'>
             Make Your reservation
         </Button>
         <Button
