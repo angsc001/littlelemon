@@ -68,11 +68,11 @@ const BookingForm = () => {
     }
 
     return (
-        <Center>
+        <html>
         <form className="form" onSubmit={formik.handleSubmit}>
-        <HStack>
+        <span>
         <img src={logo}></img>
-        </HStack>
+        </span>
             <FormControl isInvalid={formik.errors.date}>
                 <FormLabel className='blacktitle' hmtlfor="res-date">Choose date</FormLabel>
                 <Input
@@ -120,7 +120,7 @@ const BookingForm = () => {
         onClick={handleClick}
         >Back</Button>
         </form>
-        </Center>
+        </html>
     );
 }
 

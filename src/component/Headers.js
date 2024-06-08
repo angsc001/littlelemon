@@ -3,39 +3,20 @@ import logo from "../image/LittleLemon.png"
 
 Headers = () => {
     return(
-        <Box
-         transitionProperty="transform"
-         transitionDuration=".3s"
-         transitionTimingFunction="ease-in-out"
-         background="FFFFFF"
-         className="gridcontainer"
-         minHeight="150px"
-         maxWidth="auto"
-         >
-                <Box
-                    position="absolute"
-                    top="45px"
-                    left="269px">
-                <img
-                    width='230px'
-                    height='70px'
-                    src={logo}
-                    />
-                </Box>
-                <Box
-                    position="absolute"
-                    top="61px"
-                    left="525px"
-                    minWidth="740px"
-                >
-                        <a href="/home">Home</a>
-                        <a href="/about">About</a>
-                        <a href="/menu">Menu</a>
-                        <a href="/reservation">Reservations</a>
-                        <a href="/order">Order Online</a>
-                        <a href="/login">Login</a>
-                </Box>
-            </Box>
+        <html >
+            <main class="flex bg-white h-full md:h-40 lg:w-max mr-auto ml-auto items-center pl-6">
+                <img src={logo} class=" w-60 h-20"/>
+                <ul class="flex flex-wrap">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/menu">Menu</a></li>
+                        <li><a href="/reservation">Reservations</a></li>
+                        <li><a href="/order">Order Online</a></li>
+                        <li><a href="/login">Login</a></li>
+                </ul>
+            </main>
+
+            </html>
     );
 }
 

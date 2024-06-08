@@ -8,47 +8,42 @@ function Main (){
         navigate('/form');
     }
     return(
-        <Box 
-        backgroundColor="#495E57"
-        height="410px"
-        className="gridcontainer"
+        <main 
+        // backgroundColor="#495E57"
+        // height="410px"
+        // className="gridcontainer"
+        class="bg-primbg lg:h-96 h-full grid grid-flow-row"
        >
-            <Box
-            position="absolute"
-            top="171px"
-            left="269px"
-            >
-                <h1 className="littlelemon">
-                    Little Lemon
-                </h1>
-                <h1 className="whitetitle">
-                    Chicago
-                </h1>
-                <Box width="317px"
-                height="104px">
-                <h2>We are a family owned
-                    Mediterranean restaurant,
-                    focused on traditional
-                    recipes served with a modern
-                    twist.</h2>
-                </Box>
-                <button
-                className="reserve"
-                onClick={handleClick}>
-                    Reserve a Table
-                </button>
-            </Box>
-            <Box
-            position="absolute"
-            top="181px"
-            left="829px">
-            <img
-                className="mainphoto"
-                src= {image}
-                />
-            </Box>
 
-         </Box>
+            <h1 
+            class="align-start font-prim font-semibold text-7xl ml-5 mt-5 text-primf"
+            >
+                Little Lemon
+            </h1>
+            <h1 class="align-start font-prim font-semibold text-7xl ml-5 mb-5 text-seconf">
+                Chicago
+            </h1>
+            <h2
+            class="w-80 h-24 text-seconf align-start font-secon text-xl tracking-descp m-5"
+            // color: white;
+            // align-self: start;
+            // max-height: 18px;
+            // font-family: 'karla';
+            // letter-spacing: 1px;
+            // font-size: 18px;
+            >
+                We are a family owned
+                Mediterranean restaurant,
+                focused on traditional
+                recipes served with a modern
+                twist.
+            </h2>
+            <button class="m-5 w-52 h-16 rounded-lg font-medium bg-btnbg font-secon"
+            onClick={handleClick}>
+                Reserve a Table
+            </button>
+            <img class=" w-96 h-96 rounded-3xl m-5" src= {image}/>
+         </main>
     );
 }
 export default Main;
