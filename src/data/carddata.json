@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "key": "greek salad",
+        "title": "Greek Salad",
+        "imgurl": "https://www.olivetomato.com/wp-content/uploads/2019/06/Easy-Greek-Salad-Recipe.jpg",
+        "price": 12.99,
+        "description": " The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons."
+    },
+    {
+        "id": 2,
+        "key":"bruchetta",
+        "title": "Bruchetta",
+        "imgurl": "https://www.lifeasastrawberry.com/wp-content/uploads/2012/11/warm-bruschetta-1.jpg",
+        "price": 10.99,
+        "description": "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil."
+    },
+    {
+        "id": 3,
+        "title": "Lemon Dessert",
+        "key": "lemondessert",
+        "imgurl": "https://thenovicechefblog.com/wp-content/uploads/2021/05/Lemon-Pudding-Trifle-12-1024x1536.jpg",
+        "price": 9.99,
+        "description": "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
+
+    }
+]
+
