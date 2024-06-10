@@ -13,6 +13,9 @@ module.exports = {
       seconf: "#FFFFFF",
       menubg: "#EDEFEE",
       pricef: "#EE9972",
+      disabledf: "#515151",
+      disabledbg: "#D5D171",
+      errf:"#FF0000",
     },
     fontFamily:{
       prim: 'Marlazi Text',

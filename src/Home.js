@@ -7,10 +7,11 @@ import Testimonials from './component/Testimonials.js'
 import AboutUs from './component/AboutUs.js'
 import { ChakraProvider } from '@chakra-ui/react';
 import ogimage from "./image/restauranfood.jpg";
+import Alert from './component/Alert.js';
 
 const Home = () => {
     return (
-        <ChakraProvider>
+        <html>
 <head>
 <meta name='description' content='Restaurant'></meta>
 <meta name="og:title" content="LittleLemon"/>
@@ -18,14 +19,19 @@ const Home = () => {
 <meta name="og:image" content={ogimage}/>
 </head>
 <main>
-    <Headers/>
+<ChakraProvider>
+<Headers/>
     <Main/>
     <Specials/>
+    <Alert></Alert>
+
     {/* <Testimonials/>
     <AboutUs/>
     <Footer/> */}
-</main>
 </ChakraProvider>
+
+</main>     
+</html>
     )
 }
 
