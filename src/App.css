@@ -42,11 +42,11 @@
   font-size: 18px;
 } */
 
-h3{
+/* h3{
   font-family: 'karla';
   font-weight: normal;
   font-size: 16px;
-}
+} */
 
 a{
   font-family: 'Marlazi Text';
@@ -119,11 +119,6 @@ a{
   object-fit: cover;
 }
 
-.invisiblebutton {
-  font-weight: bold;
-  margin-top: 50px;
-  font-size: 18px;
-}
 
 .price{
   font-size: 25;
