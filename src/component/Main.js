@@ -1,4 +1,3 @@
-import { Box } from "@chakra-ui/react";
 import image from "../image/restauranfood.jpg"
 import { useNavigate } from "react-router-dom";
 
@@ -27,7 +26,7 @@ function Main (){
                 recipes served with a modern
                 twist.
             </h2>
-            <button class="m-5 w-52 h-16 rounded-lg font-medium bg-btnbg md:ml-5 font-secon col-start-1 md:mb-20 lg:mt-5 lg:mb-20"
+            <button class="m-5 w-52 h-16 rounded-lg font-semibold text-xl bg-btnbg md:ml-5 font-secon col-start-1 md:mb-20 lg:mt-5 lg:mb-20"
             onClick={handleClick}>
                 Reserve a Table
             </button>

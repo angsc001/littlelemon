@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
+/* :root{
   --primary-color: #495E57;
   --secondary-color:#EDEFEE;
   --button: #F4CE14;
@@ -23,7 +23,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 350px 350px 350px 350px 1fr 1fr 1fr 1fr;
   grid-template-rows:repeat(3,auto);
   min-width: 1440px;
-}
+} */
 
 /* h1 {
   align-self: start;
@@ -48,7 +48,7 @@
   font-size: 16px;
 } */
 
-a{
+/* a{
   font-family: 'Marlazi Text';
   font-weight: bold;
   font-size: 20px;
@@ -98,11 +98,12 @@ a{
   border-radius: 8px;
   font-family: 'karla';
   font-weight: 600;
-  stroke-width: 0%; */
+  stroke-width: 0%; 
 
-}
+} 
+  */
 
-.onlinemenu {
+/* .onlinemenu {
   background-color: var(--button);
   width: 175px;
   height: 59px;
@@ -142,4 +143,4 @@ main {
   font-family: 'Karla';
   font-weight: bold;
   font-size: 25px;
-}
+} */

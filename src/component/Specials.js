@@ -1,4 +1,3 @@
-import { HStack, Box } from "@chakra-ui/react";
 import SCard from "./Card.js";
 import jsondata from "../data/carddata.json"
 import { useEffect, useState } from "react";
@@ -19,7 +18,7 @@ return (
             >
             <h1 class="ml-0 mt-5 align-start font-prim font-medium text-5xl
             md:m-5">This weeks special</h1>
-            <button class="w-52 h-16 ml-0 mt-10 mb-10 rounded-lg font-medium bg-btnbg font-secon
+            <button class="w-52 h-16 ml-0 mt-10 mb-10 rounded-lg font-semibold text-xl bg-btnbg font-secon
             md:m-5">Online Menu</button>
             </main>
             <item class="grid ml-20
