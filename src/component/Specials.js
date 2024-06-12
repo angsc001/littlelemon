@@ -13,7 +13,7 @@ return (
         <html class="lg:h-full md:h-5/6 h-full">
             <main
             class="w-max mr-auto ml-auto
-            md:flex md:gap-64 md:items-center md:mt-20 md:mb-10
+            md:flex md:gap-20 md:items-center md:mt-20 md:mb-10
             lg:flex lg:gap-64 lg:items-center mt-10 content-center"
             >
             <h1 class="ml-0 mt-5 align-start font-prim font-medium text-5xl
