@@ -27,10 +27,10 @@ const Home = () => {
 
     {/* <Testimonials/> */}
     <AboutUs/>
-    {/* <Footer/> */}
+    <Footer/>
 </ChakraProvider>
 
-</main>     
+</main>
 </html>
     )
 }
