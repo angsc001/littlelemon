@@ -21,7 +21,7 @@ const Testimonials = () => {
             md:m-5 text-seconf">Testimonials</h1>
         </main>
         <item class="grid ml-20 gap-5 p-10 
-        md:flex md:flex-wrap md:gap-5
+        md:flex md:flex-wrap md:gap-3
         lg:flex lg:gap-5 lg:w-max lg:mr-auto lg:ml-auto lg:flex-wrap">
         {data.map(item => (
         <Rating 

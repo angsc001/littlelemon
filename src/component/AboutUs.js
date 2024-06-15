@@ -4,55 +4,29 @@ import aboutuspic2 from "../image/restaurant chef B.jpg"
 
 const AboutUs = () => {
     return (
-        <Center 
-        backgroundColor="#FFFFFF"
-        height= "600px"
-       >
-        <HStack
-        spacing="243px">
-        <VStack
-        position="absolute"
-        top="1980px"
-        left="261px"
-        width="428px"
-        height="438px"
-        spacing="0px">
-            <h1 className="littlelemon">
-                Little Lemon
-            </h1>
-            <h1 className="blacktitle">
-                Chicago
-            </h1>
-            <h2 className="blacktitle">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-            Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-            Velit officia consequat duis enim velit mollit.
-            </h2>
-        </VStack>
-        <Box
-        position="absolute"
-        top="1927px"
-        left="923px">
-        <img
-            width="400px"
-            height="261px"
-            src={aboutuspic1}
-            />
-        </Box>
-        <Box
-        position="absolute"
-        top="2116px"
-        left="757px">
-        <img
-            width="461px"
-            height="283px"
-            src={aboutuspic2}
-            />
-        </Box>
+    <html class="lg:h-full md:h-5/6 h-full">
+    <main class="w-max mr-auto ml-auto
+     md:gap-20 md:items-center md:mt-20 md:mb-10
+    lg:flex lg:gap-10 lg:items-center mt-10 content-center">
+    <body>
+    <h1 class="align-start font-prim font-medium text-7xl ml-5 mt-5 text-primf col-start-1">
+    Little Lemon
+    </h1>
+    <h1 class="align-start font-prim font-medium text-5xl ml-5 mb-5 col-start-1">
+        Chicago
+    </h1>
+    <h2 class=" w-96 h-auto font-secon ml-5 font-semibold">
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+    Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+    Velit officia consequat duis enim velit mollit.
+    </h2>
+    </body>
+    <img width="461px" height="283px" class="m-2 rounded-md lg:mb-20 " src={aboutuspic2}/>
+    <img width="400px" height="261px" class="m-2 rounded-md lg:absolute lg:right-10 lg:bottom-0" src={aboutuspic1}/>
 
-         </HStack>
-         </Center>
+    </main>
+    </html>
     )
 }
 
