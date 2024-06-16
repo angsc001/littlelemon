@@ -8,8 +8,8 @@ function Main (){
     }
     return(
         <html class="bg-primbg lg:h-full md:h-5/6 h-full">
-        <main class="w-max mr-auto ml-auto grid 
-         md:grid-cols-2 
+        <main class="w-max mr-auto ml-auto grid
+         md:grid-cols-2
          lg:grid-cols-2
          lg:gap-x-32
         ">
