@@ -25,9 +25,9 @@ const Home = () => {
     <Specials/>
     <Alert></Alert>
 
-    {/* <Testimonials/> */}
+    <Testimonials/>
     <AboutUs/>
-    <Footer/>
+    {/* <Footer/> */}
 </ChakraProvider>
 
 </main>

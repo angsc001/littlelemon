@@ -22,9 +22,10 @@ const AboutUs = () => {
     Velit officia consequat duis enim velit mollit.
     </h2>
     </body>
-    <img width="461px" height="283px" class="m-2 rounded-md lg:mb-20 " src={aboutuspic2}/>
-    <img width="400px" height="261px" class="m-2 rounded-md lg:absolute lg:right-10 lg:bottom-0" src={aboutuspic1}/>
-
+    <container  class="grid grid-cols-1 grid-rows-1">
+    <img width="461px" height="283px" class=" object-contain m-2 rounded-md lg:ml-10 lg:mb-20 " src={aboutuspic2}/>
+    {/* <img width="400px" height="261px" class=" object-contain m-2 rounded-md lg:relative lg:origin-bottom-right lg:right-64 lg:bottom-0" src={aboutuspic1}/> */}
+    </container>
     </main>
     </html>
     )

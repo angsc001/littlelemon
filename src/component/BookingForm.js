@@ -8,6 +8,7 @@ import {useFormik} from 'formik';
 import {useAlertContext} from "../context/alertContext.js";
 import * as Yup from 'yup';
 import { Alert } from '@chakra-ui/react';
+import { wait } from '@testing-library/user-event/dist/utils/index.js';
 const BookingForm = () => {
     const navigate = useNavigate();
     const {availableTimes, updateTimes} = useDate();
@@ -35,13 +36,14 @@ const BookingForm = () => {
                     .required("Please select a date"),
           }),
           onSubmit: async values => {
-            await submit(true,values).catch(submit(true,values));
-            console.log(values);
-            console.log(response);
+            await submit(true,values);
+            if(response == null)
+                onOpen("error","Something went wrong, please try again later!");
+            else
             onOpen(response.type,response.message);
             setTimeout(() => {
                 onClose();
-                if(response.type==='success')
+                if(response !== null && response.type==='success')
                     navigate('/')
               }, 300);
 
