@@ -3,21 +3,12 @@ import logo from "../image/LittleLemon.png"
 import { useNavigate } from 'react-router-dom';
 import { useDate } from './DateContext';
 import useSubmit from '../hooks/useSubmit';
-import React, { useRef, useState,useEffect } from 'react';
 import {useFormik} from 'formik';
 import {useAlertContext} from "../context/alertContext.js";
 import * as Yup from 'yup';
-import { Alert } from '@chakra-ui/react';
-import { wait } from '@testing-library/user-event/dist/utils/index.js';
 const BookingForm = () => {
     const navigate = useNavigate();
     const {availableTimes, updateTimes} = useDate();
-    const [formData, setFormData] = useState({
-    date: "",
-    time: "",
-    guest: "",
-    occasion:"",
-  });
     const {isLoading, response, submit} = useSubmit();
     const {onOpen ,onClose}  = useAlertContext();
     const handleClick = () => {
@@ -52,7 +43,6 @@ const BookingForm = () => {
 
     return (
         <html>
-        {/* <label class="float-right">{response.type}</label> */}
         <img src={logo} class="m-auto"></img>
         <form class="grid justify-center w-full m-auto" onSubmit={formik.handleSubmit}>
         <label class="font-secon text-primbg text-lg" hmtlfor="res-date">Date</label>

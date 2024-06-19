@@ -1,4 +1,3 @@
-import { Box, Center,HStack,VStack } from "@chakra-ui/react";
 import aboutuspic1 from "../image/Mario and Adrian A.jpg"
 import aboutuspic2 from "../image/restaurant chef B.jpg"
 
