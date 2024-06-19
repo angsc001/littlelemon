@@ -21,9 +21,9 @@ return (
             <button class="w-52 h-16 ml-0 mt-10 mb-10 rounded-lg font-semibold text-xl bg-btnbg font-secon
             md:m-5">Online Menu</button>
             </main>
-            <item class="grid ml-20
-            md:flex md:flex-wrap md:gap-5
-            lg:flex lg:gap-5 lg:w-max lg:mr-auto lg:ml-auto lg:flex-wrap">
+            <item class="flex flex-wrap gap-5 justify-center
+             md:gap-5
+             lg:gap-5 ">
                 {data.map(item => (
                     <SCard 
                     key={item.key}

@@ -19,8 +19,7 @@ const Home = () => {
 <meta name="og:image" content={ogimage}/>
 </head>
 <main>
-<ChakraProvider>
-<Headers/>
+    <Headers/>
     <Main/>
     <Specials/>
     <Alert></Alert>
@@ -28,7 +27,6 @@ const Home = () => {
     <Testimonials/>
     <AboutUs/>
     {/* <Footer/> */}
-</ChakraProvider>
 
 </main>
 </html>
