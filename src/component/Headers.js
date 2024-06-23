@@ -13,12 +13,12 @@ Headers = () => {
                 <ul class="font-prim font-semibold text-xl z-[-1] w-full left-0 hidden
                      md:items-center md:z-auto md:w-auto md:static
                      top-[-400px] transition-all ease-in duration-500 lg:flex lg:opacity-100">
-                        <li class="m-3"><a href="/home">Home</a></li>
-                        <li class="m-3"><a href="/about">About</a></li>
-                        <li class="m-3"><a href="/menu">Menu</a></li>
-                        <li class="m-3"><a href="/reservation">Reservations</a></li>
-                        <li class="m-3"><a href="/order">Order Online</a></li>
-                        <li class="m-3"><a href="/login">Login</a></li>
+                        <li class="m-3 hover:text-seconf hover:bg-primbg"><a href="/home">Home</a></li>
+                        <li class="m-3 hover:text-seconf hover:bg-primbg"><a href="/about">About</a></li>
+                        <li class="m-3 hover:text-seconf hover:bg-primbg"><a href="/menu">Menu</a></li>
+                        <li class="m-3 hover:text-seconf hover:bg-primbg"><a href="/reservation">Reservations</a></li>
+                        <li class="m-3 hover:text-seconf hover:bg-primbg"><a href="/order">Order Online</a></li>
+                        <li class="m-3 hover:text-seconf hover:bg-primbg"><a href="/login">Login</a></li>
                 </ul>
                 </body>
                 <span class="text-xl cursor-pointer m-5 lg:hidden block ">

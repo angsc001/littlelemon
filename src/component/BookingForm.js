@@ -79,11 +79,11 @@ const BookingForm = () => {
                 <option>Birthday</option>
                 <option>Anniversary</option>
             </select>
-        <button class="font-secon text-primbg text-lg bg-btnbg mt-5 rounded-md h-10 w-80 disabled:text-disabledf disabled:bg-disabledbg" type="submit" height="20px" disabled={formik.errors.date||isLoading}
+        <button class="font-secon text-primbg text-lg bg-btnbg mt-5 rounded-md h-10 w-80 hover:text-seconf hover:bg-primbg disabled:text-disabledf disabled:bg-disabledbg" type="submit" height="20px" disabled={formik.errors.date||isLoading}
          data-testid='submitbutton'>
             Make Your reservation
         </button>
-        <button class="font-secon text-primbg text-lg bg-btnbg mt-3 rounded-md h-10 w-80" onClick={handleClick}>Back</button>
+        <button class="font-secon text-primbg text-lg bg-btnbg mt-3 rounded-md h-10 w-80 hover:text-seconf hover:bg-primbg" onClick={handleClick}>Back</button>
         </form>
         </html>
     );

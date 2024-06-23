@@ -19,7 +19,8 @@ module.exports = {
     },
     fontFamily:{
       prim: 'Marlazi Text',
-      secon: 'Karla'
+      secon: 'Karla',
+      gf:'Poppin'
     },
     letterSpacing:{
       descp: "1px",
